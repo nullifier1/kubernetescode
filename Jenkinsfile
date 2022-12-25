@@ -16,6 +16,7 @@ node {
   
 
         app.inside {
+            sh 'pwd'
             sh 'go test ./...'
         }
     }
