@@ -12,14 +12,7 @@ node {
        app = docker.build("infinityofcore/test")
     }
 
-    stage('Test image') {
-  
 
-        app.inside {
-            sh 'pwd'
-            sh 'go test ./...'
-        }
-    }
 
     stage('Push image') {
         
