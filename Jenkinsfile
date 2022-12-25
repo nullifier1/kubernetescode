@@ -16,7 +16,7 @@ node {
   
 
         app.inside {
-            sh 'go test ./..."'
+            sh 'go test ./...'
         }
     }
 
