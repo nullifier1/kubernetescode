@@ -5,4 +5,5 @@ RUN git clone https://github.com/nullifier1/gogs
 WORKDIR /home/git/gogs
 RUN go build -o gogs
 EXPOSE 3000
-RUN /home/git/gogs/gogs         
+#RUN /home/git/gogs/gogs         
+CMD ["sleep","3600"]
