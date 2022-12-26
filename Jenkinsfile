@@ -8,7 +8,8 @@ node {
     }
 
     stage('Build image') {
-  
+       sh 'pwd'
+       sh 'ls'
        app = docker.build("infinityofcore/test")
     }
 
